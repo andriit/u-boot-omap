@@ -170,6 +170,13 @@ struct s32ktimer {
 #define CH_FLAGS_CHFLASH	(0x1 << 2)
 #define CH_FLAGS_CHMMCSD	(0x1 << 3)
 
+/* ABB settings */
+#define OMAP_ABB_SETTLING_TIME		50
+#define OMAP_ABB_CLOCK_CYCLES		16
+
+/* ABB tranxdone mask */
+#define OMAP_ABB_MPU_TXDONE_MASK	(0x1 << 7)
+
 #ifndef __ASSEMBLY__
 struct omap_boot_parameters {
 	char *boot_message;
